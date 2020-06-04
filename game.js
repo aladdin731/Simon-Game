@@ -7,7 +7,7 @@ var started = false;
 var level = 0;
 
 
-$(document).click(function() {
+$(document).keydown(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
